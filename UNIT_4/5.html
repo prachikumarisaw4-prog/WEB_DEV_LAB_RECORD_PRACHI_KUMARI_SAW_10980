@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Canvas Basic Drawing
+    </title>
+</head>
+<body>
+
+<h3>Basic Canvas Drawing for Beginners</h3>
+
+<canvas id="myCanvas" width="200" height="150" style="border:1px solid black;">
+    Your browser does not support canvas.
+</canvas>
+
+<script>
+    // Get canvas context
+    const ctx = document.getElementById("myCanvas").getContext("2d");
+
+    // Draw a blue rectangle
+    ctx.fillStyle = "blue";
+    ctx.fillRect(20, 20, 100, 50); // x, y, width, height
+
+    // Draw a red circle
+    ctx.beginPath();
+    ctx.arc(150, 50, 25, 0, 2 * Math.PI); // x, y, radius, startAngle, endAngle
+    ctx.fillStyle = "red";
+    ctx.fill();
+</script>
+
+</body>
+</html>
