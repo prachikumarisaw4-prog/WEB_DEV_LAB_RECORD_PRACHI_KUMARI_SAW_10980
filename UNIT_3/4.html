@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easy Form Validation</title>
+</head>
+<body>
+
+<h3>Form Validation</h3>
+
+<form onsubmit="return checkForm()">
+    Name:
+    <input type="text" id="name">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    function checkForm() {
+        let name = document.getElementById("name").value;
+
+        if (name == "") {
+            alert("Please enter your name");
+            return false;
+        }
+
+        alert("Form submitted");
+        return true;
+    }
+</script>
+
+</body>
+</html>
