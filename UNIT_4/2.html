@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Example</title>
+   
+
+    <style>
+        .hide {
+            display: none;
+        }
+        .box {
+            padding: 10px;
+            border: 1px solid black;
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Show / Hide using JavaScript</h3>
+
+<button onclick="toggleBox()">Show / Hide</button>
+
+<div id="myBox" class="box">
+    This is a box
+</div>
+
+<script>
+    function toggleBox() {
+        // toggle CSS class
+        document.getElementById("myBox").classList.toggle("hide");
+    }
+</script>
+
+</body>
+</html>
