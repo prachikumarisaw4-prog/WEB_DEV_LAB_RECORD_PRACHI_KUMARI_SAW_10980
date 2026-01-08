@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Create and Manipulate Elements
+    </title>
+</head>
+<body>
+
+<h3>JavaScript Create, Add, Remove Elements</h3>
+
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Item</button>
+
+<ul id="list">
+    <li>Item 1</li>
+</ul>
+
+<script>
+    // Add new element
+    function addItem() {
+        let li = document.createElement("li");   // create element
+        li.innerHTML = "New Item";               // add text
+        document.getElementById("list").appendChild(li); // append
+    }
+
+    // Remove last element
+    function removeItem() {
+        let list = document.getElementById("list");
+        if (list.lastElementChild) {
+            list.removeChild(list.lastElementChild);
+        }
+    }
+</script>
+
+</body>
+</html>
