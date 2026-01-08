@@ -1,0 +1,43 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+  <style>
+    * {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    #main-title {
+      color:blue;
+      text-align: center;
+    }
+    .highlight {
+      color: green;
+      font-weight: bold;
+    }
+    div p {
+      color: purple;
+    }
+    h2, h3 {
+      color: navy;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">Different Types of CSS Selectors</h1>
+
+  <p class="highlight">This line uses a CLASS selector.</p>
+  <p>This line is normal text.</p>
+
+  <div>
+    <p>This paragraph is inside a DIV — descendant selector applied.</p>
+  </div>
+
+  <h2>Group Selector Example</h2>
+  <h3>Universal Selector Example</h3>
+
+</body>
+</html>
