@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Event Listener Example 
+    </title>
+</head>
+<body>
+
+<h3>addEventListener Example</h3>
+
+<button id="btn">Click Me</button>
+<button id="removeBtn">Remove Event</button>
+
+<p id="text">Waiting for click...</p>
+
+<script>
+    // function for click event
+    function showMessage() {
+        document.getElementById("text").innerHTML = "Button Clicked!";
+    }
+
+    // addEventListener
+    document.getElementById("btn").addEventListener("click", showMessage);
+
+    // removeEventListener
+    document.getElementById("removeBtn").addEventListener("click", function () {
+        document.getElementById("btn").removeEventListener("click", showMessage);
+        document.getElementById("text").innerHTML = "Event Removed!";
+    });
+</script>
+
+</body>
+</html>
