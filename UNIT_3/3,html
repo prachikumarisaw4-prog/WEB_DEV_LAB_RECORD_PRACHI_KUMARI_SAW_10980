@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Function and Scope</title>
+
+</head>
+<body>
+
+<h3>JavaScript Function & Scope</h3>
+
+<script>
+    // Simple user-defined function
+    function greet() {
+        document.write("Hello from function<br>");
+    }
+
+    // Function call
+    greet();
+
+    document.write("<br>");
+
+    // var example
+    var x = 10;
+    document.write("var x = " + x + "<br>");
+
+    // let example
+    let y = 20;
+    document.write("let y = " + y + "<br>");
+
+    // const example
+    const z = 30;
+    document.write("const z = " + z + "<br>");
+</script>
+
+</body>
+</html>
