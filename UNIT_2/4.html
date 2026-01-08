@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Web Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      background-color: blue;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Media Query for Mobile */
+    @media (max-width: 600px) {
+      body {
+        background-color: white;
+      }
+      .container {
+        width: 95%;
+        padding: 10px;
+      }
+      header {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Design Example</h1>
+  </header>
+
+  <div class="container">
+    <h2>Resize the browser window</h2>
+    <p>When you open this page on a small device, background and layout automatically adjust.</p>
+  </div>
+</body>
+</html>
